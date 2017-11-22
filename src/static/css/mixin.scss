@@ -1,0 +1,41 @@
+/** 弹性布局 **/
+@mixin display-flex {
+  display: box;
+  display: flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex($value: 1) {
+  -webkit-box-flex: $value;
+  -webkit-flex: $value;
+  -moz-box-flex: $value;
+  -moz-flex: $value;
+  -ms-flex: $value;
+  flex: $value;
+}
+@mixin flex-direction($value: row) {
+  -webkit-flex-direction: $value;
+  -moz-flex-direction: $value;
+  -ms-flex-direction: $value;
+  -o-flex-direction: $value;
+  flex-direction: $value;
+}
+@mixin justify-content($value: flex-start) {
+  -webkit-box-pack: $value;
+  -webkit-justify-content: $value;
+  -moz-justify-content: $value;
+  -ms-justify-content: $value;
+  -o-justify-content: $value;
+  justify-content: $value;
+}
+@mixin align-items($value: stretch) {
+  -webkit-box-align: $value;
+  -webkit-align-items: $value;
+  -moz-align-items: $value;
+  -ms-align-items: $value;
+  -o-align-items: $value;
+  align-items: $value;
+}
